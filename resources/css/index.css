@@ -32,6 +32,8 @@ h4 {
 h1 {
   font-size: 3.5rem;
   line-height: 4.37rem;
+  margin-bottom: 1.75rem;
+  color: var(--dark-blue);
 }
 
 h2 {
@@ -50,6 +52,8 @@ h4 {
 
 p.med {
   font-size: 1.13rem;
+  line-height: 1.75rem;
+  color: var(--gray);
 }
 
 p.sm {
@@ -89,4 +93,35 @@ p.sm {
 .b2:hover,
 .b3:hover {
   opacity: 0.5;
+}
+
+/* Basic Page Setup */
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Header */
+header {
+  height: 900px;
+  background-image: url("../images/image-hero-desktop@2x.png");
+  background-position-x: calc(100% + 19.25rem);
+  background-position-y: -8.5rem;
+  background-size: 62rem;
+  background-repeat: no-repeat;
+}
+
+.header-cta {
+  padding-inline: 10.3rem;
+  padding-top: 1.5rem;
+  margin-bottom: 11.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  padding-left: 10.3rem;
+  max-width: 29rem;
 }
