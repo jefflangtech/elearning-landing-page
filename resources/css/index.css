@@ -1,0 +1,92 @@
+/* 
+CSS File Structure:
+ - Design System
+*/
+
+/* Design System */
+:root {
+  --gray-blue: #666CA3;
+  --dark-blue: #13183F;
+  --gray: #83869A;
+  --dark-pink: #F74780;
+  --light-pink: #FFA7C3;
+  --white: #FFFFFF;
+  --pink-gradient: linear-gradient(#F02AA6, #FF6F48);
+  --purple-gradient: linear-gradient(#4851FF, #F02AA6);
+}
+
+html {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.75rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 4.37rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 3.19rem;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p.med {
+  font-size: 1.13rem;
+}
+
+p.sm {
+  font-weight: 700;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 1.13rem;
+  line-height: 1.75rem;
+  color: var(--white);
+  border: none;
+  background: none;
+  padding-block: 0.88rem;
+  padding-inline: 2rem;
+  cursor: pointer;
+  border-radius: 1.75rem;
+  min-width: 9.75rem;
+}
+
+.b1 {
+  background-color: var(--dark-blue);
+}
+
+.b1:hover {
+  background-color: var(--gray-blue);
+}
+
+.b2 {
+  background-image: var(--pink-gradient);
+}
+
+.b3 {
+  background-image: var(--purple-gradient);
+}
+
+.b2:hover,
+.b3:hover {
+  opacity: 0.5;
+}
