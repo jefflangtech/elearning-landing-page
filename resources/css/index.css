@@ -60,6 +60,17 @@ p.sm {
   font-weight: 700;
 }
 
+a {
+  text-decoration: none;
+  color: var(--dark-pink);
+  font-size: 1.13rem;
+  line-height: 1.75rem;
+}
+
+a:hover {
+  color: var(--light-pink);
+}
+
 .button {
   font-weight: 700;
   font-size: 1.13rem;
@@ -114,14 +125,41 @@ header {
 .header-cta {
   padding-inline: 10.3rem;
   padding-top: 1.5rem;
-  margin-bottom: 11.5rem;
+  margin-bottom: 10rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
+.header-cta img {
+  max-height: 1.75rem;
+}
+
 .hero {
   padding-left: 10.3rem;
   max-width: 29rem;
 }
+
+.hero p {
+  margin-bottom: 2.5rem;
+  margin-right: 1rem;
+}
+
+.courses {
+  padding-inline: 10.3rem;
+}
+
+.card {
+  border-radius: 0.5rem;
+  min-height: 20.13rem;
+  position: relative;
+}
+
+.intro {
+  color: white;
+  background: var(--pink-gradient);
+  padding-inline: 2rem;
+  padding-top: 4rem;
+}
+
