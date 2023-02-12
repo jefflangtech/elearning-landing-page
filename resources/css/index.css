@@ -48,6 +48,7 @@ h3 {
 
 h4 {
   font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 p.med {
@@ -148,10 +149,16 @@ header {
 
 .courses {
   padding-inline: 10.3rem;
+  background-image: linear-gradient(#ffffff, #f0f1ff);
+  min-height: 300px;
+  border: 1px solid red;
 }
 
 .card {
   border-radius: 0.5rem;
+  padding-inline: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 2.5rem;
   min-height: 20.13rem;
   position: relative;
 }
@@ -161,5 +168,19 @@ header {
   background: var(--pink-gradient);
   padding-inline: 2rem;
   padding-top: 4rem;
+}
+
+.course {
+  border: 1px solid green;
+}
+
+.course img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.course p {
+  margin-bottom: 1.5rem;
 }
 
