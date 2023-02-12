@@ -151,7 +151,13 @@ header {
   padding-inline: 10.3rem;
   background-image: linear-gradient(#ffffff, #f0f1ff);
   min-height: 300px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 3.5rem;
+  column-gap: 1.88rem;
+  padding-bottom: 8.75rem;
+  padding-top: 1.5rem;
 }
 
 .card {
@@ -159,8 +165,9 @@ header {
   padding-inline: 2rem;
   padding-top: 4rem;
   padding-bottom: 2.5rem;
-  min-height: 20.13rem;
+  min-height: 13.63rem;
   position: relative;
+  background-color: var(--white);
 }
 
 .intro {
@@ -171,16 +178,31 @@ header {
 }
 
 .course {
-  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
 }
 
 .course img {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -1.5rem;
+  left: 2rem;
 }
 
 .course p {
   margin-bottom: 1.5rem;
+}
+
+.course a {
+  margin-top: auto;
+}
+
+footer {
+  background-color: var(--dark-blue);
+  padding-inline: 10.3rem;
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
