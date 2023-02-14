@@ -111,11 +111,12 @@ a:hover {
 body {
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 /* Header */
 header {
-  height: 900px;
+  /* height: 900px; */
   background-image: url("../images/image-hero-desktop@2x.png");
   background-position-x: calc(100% + 19.25rem);
   background-position-y: -8.5rem;
@@ -139,6 +140,7 @@ header {
 
 .hero {
   padding-left: 10.3rem;
+  padding-bottom: 14.13rem;
   max-width: 29rem;
 }
 
@@ -204,5 +206,48 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header {
+    /* height: 900px; */
+    background-image: url("../images/image-hero-tablet@2x.png");
+    background-position-x: calc(100% + 18.63rem);
+    background-position-y: -5.75rem;
+    background-size: 40rem;
+    background-repeat: no-repeat;
+  }
+  .header-cta {
+    padding-inline: 2.5rem;
+    margin-bottom: 6.18rem;
+  }
+  .header-cta > img {
+    height: 1.38rem;
+  }
+  .header-cta > button {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    padding-block: 0.5rem;
+    padding-inline: 1.5rem;
+    border-radius: 1.75rem;
+    min-width: 8.75rem;
+  }
+  .hero {
+    padding-left: 2.5rem;
+    max-width: 24.88rem;
+    padding-bottom: 11.63rem;
+  }
+  .hero > h1 {
+    font-size: 2.5rem;
+    line-height: 3.15rem;
+    margin-bottom: 1.5rem;
+  }
+  .hero > p {
+    font-size: 1rem;
+    line-height: 1.63rem;
+    margin-right: 0rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
