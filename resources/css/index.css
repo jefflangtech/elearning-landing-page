@@ -1,6 +1,9 @@
 /* 
 CSS File Structure:
  - Design System
+ - Content Sections
+ - Media Queries
+  - Tablet Screens
 */
 
 /* Design System */
@@ -108,16 +111,13 @@ a:hover {
   opacity: 0.5;
 }
 
-/* Basic Page Setup */
 body {
   height: 100vh;
   width: 100vw;
-  overflow-x: hidden;
 }
 
-/* Header */
+/* Content Sections */
 header {
-  /* height: 900px; */
   background-image: url("../images/image-hero-desktop@2x.png");
   background-position-x: calc(100% + 19.25rem);
   background-position-y: -8.5rem;
@@ -206,6 +206,8 @@ footer {
 }
 
 /* Media Queries */
+
+/* Tablet Screens */
 @media (max-width: 768px) {
   header {
     background-image: url("../images/image-hero-tablet@2x.png");
