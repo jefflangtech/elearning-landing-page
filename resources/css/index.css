@@ -20,6 +20,7 @@ html {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.75rem;
+  overflow-x: hidden;
 }
 
 h1,
@@ -152,8 +153,6 @@ header {
 .courses {
   padding-inline: 10.3rem;
   background-image: linear-gradient(#ffffff, #f0f1ff);
-  min-height: 300px;
-  /* border: 1px solid red; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 3.5rem;
@@ -175,8 +174,6 @@ header {
 .intro {
   color: white;
   background: var(--pink-gradient);
-  padding-inline: 2rem;
-  padding-top: 4rem;
 }
 
 .course {
@@ -211,10 +208,9 @@ footer {
 /* Media Queries */
 @media (max-width: 768px) {
   header {
-    /* height: 900px; */
     background-image: url("../images/image-hero-tablet@2x.png");
-    background-position-x: calc(100% + 18.63rem);
-    background-position-y: -5.75rem;
+    background-position-x: calc(100% + 17.5rem);
+    background-position-y: -4.5rem;
     background-size: 40rem;
     background-repeat: no-repeat;
   }
@@ -248,6 +244,51 @@ footer {
     line-height: 1.63rem;
     margin-right: 0rem;
     margin-bottom: 1.5rem;
+  }
+  .courses {
+    padding-inline: 2.5rem;
+    padding-bottom: 5.38rem;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.68rem;
+  }
+  .card {
+    padding-top: 3.5rem;
+    padding-left: 2rem;
+    padding-right: 1.25rem;
+    min-height: 0rem;
+    max-height: 10.18rem;
+  }
+  .card > h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .card > h4 {
+    font-size: 1.25rem;
+    line-height: 1.56rem;
+    margin-bottom: 1rem;
+  }
+  .card > p.med {
+    font-size: 1rem;
+    line-height: 1.63rem;
+    margin-bottom: 1.5rem;
+  }
+  .card > a {
+    font-size: 1.13rem;
+    line-height: 1.75rem;
+  }
+  footer {
+    padding-inline: 2.5rem;
+  }
+ footer > img {
+    height: 1.38rem;
+  }
+  footer > button.b3 {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    padding-block: 0.5rem;
+    padding-inline: 1.5rem;
+    border-radius: 1.75rem;
+    min-width: 8.75rem;
   }
 }
 
