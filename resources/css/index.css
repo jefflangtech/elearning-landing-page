@@ -176,22 +176,22 @@ header {
   background: var(--pink-gradient);
 }
 
-.course {
+.card {
   display: flex;
   flex-direction: column;
 }
 
-.course img {
+.card img {
   position: absolute;
   top: -1.5rem;
   left: 2rem;
 }
 
-.course p {
+.card p {
   margin-bottom: 1.5rem;
 }
 
-.course a {
+.card a {
   margin-top: auto;
 }
 
