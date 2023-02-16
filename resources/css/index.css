@@ -207,6 +207,10 @@ footer {
   align-items: center;
 }
 
+.mobile-visible {
+  display: none;
+}
+
 /* Media Queries */
 
 /* Tablet Screens */
@@ -295,3 +299,87 @@ footer {
   }
 }
 
+@media (max-width: 375px) {
+  header {
+    background-image: none;
+  }
+  .mobile-visible {
+    display: block;
+    max-width: 100%;
+  }
+  .header-cta {
+    padding-inline: 2.5rem;
+    margin-bottom: 6.18rem;
+  }
+  .header-cta > img {
+    height: 1.38rem;
+  }
+  .header-cta > button {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    padding-block: 0.5rem;
+    padding-inline: 1.5rem;
+    border-radius: 1.75rem;
+    min-width: 8.75rem;
+  }
+  .hero {
+    padding-left: 2.5rem;
+    max-width: 24.88rem;
+    padding-bottom: 11.63rem;
+  }
+  .hero > h1 {
+    font-size: 2.5rem;
+    line-height: 3.15rem;
+    margin-bottom: 1.5rem;
+  }
+  .hero > p {
+    font-size: 1rem;
+    line-height: 1.63rem;
+    margin-right: 0rem;
+    margin-bottom: 1.5rem;
+  }
+  .courses {
+    --grid-column-gap: 0.68rem;
+    padding-inline: 2.5rem;
+    padding-bottom: 5.38rem;
+  }
+  .card {
+    padding-top: 3.5rem;
+    padding-left: 2rem;
+    padding-right: 1.25rem;
+    min-height: 0rem;
+    max-height: 10.18rem;
+  }
+  .card > h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .card > h4 {
+    font-size: 1.25rem;
+    line-height: 1.56rem;
+    margin-bottom: 1rem;
+  }
+  .card > p.med {
+    font-size: 1rem;
+    line-height: 1.63rem;
+    margin-bottom: 1.5rem;
+  }
+  .card > a {
+    font-size: 1.13rem;
+    line-height: 1.75rem;
+  }
+  footer {
+    padding-inline: 2.5rem;
+  }
+ footer > img {
+    height: 1.38rem;
+  }
+  footer > button.b3 {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    padding-block: 0.5rem;
+    padding-inline: 1.5rem;
+    border-radius: 1.75rem;
+    min-width: 8.75rem;
+  }
+}
