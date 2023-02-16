@@ -183,6 +183,7 @@ header {
 }
 
 .card img {
+  width: 3.5rem;
   position: absolute;
   top: -1.5rem;
   left: 2rem;
