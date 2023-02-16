@@ -151,12 +151,13 @@ header {
 }
 
 .courses {
+  --grid-column-gap: 1.88rem;
   padding-inline: 10.3rem;
   background-image: linear-gradient(#ffffff, #f0f1ff);
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(max(16.5rem, calc((100% / 3) - var(--grid-column-gap))), 1fr));
   row-gap: 3.5rem;
-  column-gap: 1.88rem;
+  column-gap: var(--grid-column-gap);
   padding-bottom: 8.75rem;
   padding-top: 1.5rem;
 }
@@ -172,7 +173,7 @@ header {
 }
 
 .intro {
-  color: white;
+  color: var(--white);
   background: var(--pink-gradient);
 }
 
@@ -248,10 +249,9 @@ footer {
     margin-bottom: 1.5rem;
   }
   .courses {
+    --grid-column-gap: 0.68rem;
     padding-inline: 2.5rem;
     padding-bottom: 5.38rem;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 0.68rem;
   }
   .card {
     padding-top: 3.5rem;
