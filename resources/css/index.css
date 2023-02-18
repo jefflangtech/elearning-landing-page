@@ -150,10 +150,15 @@ header {
   margin-right: 1rem;
 }
 
+main {
+  background-image: linear-gradient(#ffffff, #f0f1ff);
+}
+
 .courses {
+  max-width: 118rem;
   --grid-column-gap: 1.88rem;
   padding-inline: 10.3rem;
-  background-image: linear-gradient(#ffffff, #f0f1ff);
+  margin-inline: auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(max(16.5rem, calc((100% / 3) - var(--grid-column-gap))), 1fr));
   row-gap: 3.5rem;
@@ -213,6 +218,48 @@ footer {
 
 /* Media Queries */
 
+/* Break Point 1200px */
+@media (max-width: 1200px) {
+  header {
+    background-size: max(82.5%, 50rem);
+    background-position-y: min(calc(66.5rem - 100vw), -3rem);
+  }
+  .header-cta {
+    margin-bottom: calc(100vw * 0.128);
+    padding-inline: 10.3%;
+  }
+  .hero {
+    padding-inline: 10.3%;
+  }
+  .hero > h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-bottom: 1.6rem;
+  }
+}
+
+/* Break Point 900px */
+@media (max-width: 900px) {
+  .header-cta {
+    padding-inline: 2.5rem;
+  }
+  .hero {
+    padding-left: 2.5rem;
+    max-width: 22rem;
+  }
+  .hero > h1 {
+    font-size: 2.5rem;
+    line-height: 3.15rem;
+    margin-bottom: 1.5rem;
+  }
+  .hero > p {
+    font-size: 1rem;
+    line-height: 1.63rem;
+    margin-right: 0rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
 /* Tablet Screens */
 @media (max-width: 768px) {
   header {
@@ -223,7 +270,6 @@ footer {
     background-repeat: no-repeat;
   }
   .header-cta {
-    padding-inline: 2.5rem;
     margin-bottom: 6.18rem;
   }
   .header-cta > img {
@@ -238,14 +284,8 @@ footer {
     min-width: 8.75rem;
   }
   .hero {
-    padding-left: 2.5rem;
     max-width: 24.88rem;
     padding-bottom: 11.63rem;
-  }
-  .hero > h1 {
-    font-size: 2.5rem;
-    line-height: 3.15rem;
-    margin-bottom: 1.5rem;
   }
   .hero > p {
     font-size: 1rem;
