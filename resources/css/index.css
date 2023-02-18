@@ -306,42 +306,22 @@ footer {
   .mobile-visible {
     display: block;
     max-width: 100%;
+    min-width: 18rem;
   }
   .header-cta {
-    padding-inline: 2.5rem;
-    margin-bottom: 6.18rem;
-  }
-  .header-cta > img {
-    height: 1.38rem;
-  }
-  .header-cta > button {
-    font-size: 1rem;
-    line-height: 1.75rem;
-    padding-block: 0.5rem;
-    padding-inline: 1.5rem;
-    border-radius: 1.75rem;
-    min-width: 8.75rem;
+    padding-inline: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 2.38rem;
   }
   .hero {
-    padding-left: 2.5rem;
-    max-width: 24.88rem;
-    padding-bottom: 11.63rem;
-  }
-  .hero > h1 {
-    font-size: 2.5rem;
-    line-height: 3.15rem;
-    margin-bottom: 1.5rem;
-  }
-  .hero > p {
-    font-size: 1rem;
-    line-height: 1.63rem;
-    margin-right: 0rem;
-    margin-bottom: 1.5rem;
+    padding-inline: 1rem;
+    padding-bottom: 2.88rem;
   }
   .courses {
     --grid-column-gap: 0.68rem;
-    padding-inline: 2.5rem;
-    padding-bottom: 5.38rem;
+    row-gap: 2.5rem;
+    padding-inline: 1rem;
+    padding-top: 0rem;
   }
   .card {
     padding-top: 3.5rem;
@@ -349,37 +329,11 @@ footer {
     padding-right: 1.25rem;
     min-height: 0rem;
     max-height: 10.18rem;
+    min-width: 18rem;
   }
-  .card > h3 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-  .card > h4 {
-    font-size: 1.25rem;
-    line-height: 1.56rem;
-    margin-bottom: 1rem;
-  }
-  .card > p.med {
-    font-size: 1rem;
-    line-height: 1.63rem;
-    margin-bottom: 1.5rem;
-  }
-  .card > a {
-    font-size: 1.13rem;
-    line-height: 1.75rem;
-  }
-  footer {
-    padding-inline: 2.5rem;
-  }
- footer > img {
-    height: 1.38rem;
-  }
-  footer > button.b3 {
-    font-size: 1rem;
-    line-height: 1.75rem;
-    padding-block: 0.5rem;
-    padding-inline: 1.5rem;
-    border-radius: 1.75rem;
-    min-width: 8.75rem;
+  .intro {
+    padding-top: 1.5rem;
+    padding-left: 1.75rem;
+    padding-bottom: 2rem;
   }
 }
