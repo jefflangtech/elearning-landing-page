@@ -236,6 +236,9 @@ footer {
     line-height: 3.5rem;
     margin-bottom: 1.6rem;
   }
+  .courses {
+    padding-inline: 10.3%;
+  }
 }
 
 /* Break Point 900px */
@@ -257,6 +260,9 @@ footer {
     line-height: 1.63rem;
     margin-right: 0rem;
     margin-bottom: 1.5rem;
+  }
+  .courses {
+    padding-inline: 2.5rem;
   }
 }
 
